@@ -4,9 +4,13 @@
     "node": true
   },
   "extends": ["google"],
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
+    "babelOptions": {
+      "plugins": ["@babel/plugin-syntax-import-assertions"]
+    }
   },
   "rules": {
     "new-cap": "off",
